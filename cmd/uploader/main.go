@@ -57,7 +57,7 @@ func main() {
 }
 
 func uploadFile(filename string) {
-	completeFileName = fmt.Sprintf("./tmp/%s", filename)
+	completeFileName := fmt.Sprintf("./tmp/%s", filename)
 
 	f, err := os.Open(completeFileName)
 	if err != nil {
